@@ -268,7 +268,7 @@
     <div class="mfp-hide popup" id="popup">
         	<h2 class="popup-paragraph">Заполни анкету</h2>
         	<p class="popup-text">Заполни анкету и в ближайшее время мы свяжемся с вами что бы рассказать как стать инвестором</p>
-        	<form class="modal__form form">\
+        	<form class="modal__form form form-send">
 
 
 
@@ -317,7 +317,7 @@
     </div>
 <div class="mfp-hide popup" id="popup-two">
         	<h2 class="popup-paragraph mb-paragraph">Напиши нам</h2>
-        	<form class="modal__form form">
+        	<form class="modal__form form form-send">
 
 
 
@@ -372,7 +372,7 @@
 	<script src="js/common.js"></script>
 	<script>
     //E-mail Ajax Send
-    $(".form").submit(function() {
+    $(".form-send").submit(function() {
         var th = $(this);
         $.ajax({
             type: "POST",
