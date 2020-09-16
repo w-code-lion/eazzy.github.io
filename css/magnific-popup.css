@@ -404,10 +404,49 @@ img.mfp-img {
 
 @media (max-width: 768px) {
   .mfp-close {
-   
+   width: 20px;
+   height: 20px;
+   right: 5px;
   }
 
   button.mfp-close, button.mfp-arrow {
     margin: 11px 15px 0 0;
   }
+
+  .mfp-close::before {
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  content: '';
+  width: 14px;
+  height: 1px;
+  background-color: #000;
+  border-radius: 4px;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.mfp-close::after {
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  content: '';
+  width: 14px;
+  height: 1px;
+  background-color: #000;
+  border-radius: 4px;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 }
