@@ -1,0 +1,36 @@
+.lst {
+	width: 100%;
+	max-width: 430px;
+	font-size: 18px;
+	line-height: 1.5;
+	&_itm {
+		position: relative;
+		min-height: 80px;
+		padding: 0 15px 20px 90px;
+		margin-bottom: 20px;
+		&:before {
+			content: '';
+			width: 12px;
+			height: 41px;
+			background: url('../img/line-devices.svg') no-repeat center / contain;
+			position: absolute;
+			left: 7.77px;
+			top: 45.3px;
+		}
+
+		&:last-child:before {
+			display: none;
+		}
+	}
+	&_num {
+		font-size: 20px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	& p {
+		font-size: 18px;
+		font-weight: 600;
+	}
+}

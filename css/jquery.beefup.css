@@ -1,0 +1,138 @@
+.beefup {
+  border-top: 1px solid #fff;
+}
+.beefup.white {
+  border-top: 0;
+  border-bottom: 1px solid #A0A5A7;
+}
+.beefup.white:last-child {
+  border-bottom: 1px solid #A0A5A7;
+}
+
+.beefup:first-child {
+  margin-top: 0;
+}
+
+.beefup:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.beefup__head, .beefup__body {
+  padding: 10px 20px;
+}
+
+.beefup__head {
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  padding-right: 50px;
+}
+
+button.beefup__head,
+.beefup__head > button {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background: none;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+button.beefup__head[aria-disabled],
+.beefup__head > button[aria-disabled] {
+  cursor: default;
+  outline: 0;
+}
+
+.beefup__head > button {
+  position: relative;
+  z-index: 1;
+  margin: -10px -50px -10px -20px;
+  padding: 28px 0;
+  width: calc(100% + 70px);
+  background: inherit;
+  border: inherit;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding-right: 50px;
+}
+
+.beefup.white .beefup__head > button {
+  color: #000;
+}
+
+.open__text {
+  margin-left: -20px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  line-height: 1.5;
+  width: 70%;
+}
+
+.beefup__texing {
+  max-width: 820px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-bottom: 15px;
+  margin-left: -20px;
+}
+
+.beefup__texing .t-sm {
+  padding-top: 0;
+}
+
+.beefup__plus {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+    transition: .5s;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -25px;
+}
+.beefup__plus::before,
+.beefup__plus::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: .3s;
+}
+.beefup.white .beefup__plus::before,
+.beefup.white .beefup__plus::after {
+  background-color: #000;
+}
+.beefup__plus::before {
+	height: 1px;
+	width: 22px;
+	margin-left: -11px;
+}
+.beefup__plus::after {
+	width: 1px;
+	height: 22px;
+	margin-top: -11px;
+}
+
+.beefup__head:hover .beefup__plus {
+	background-color: #56F1ED;
+}
+.beefup__head:hover .beefup__plus:before,
+.beefup__head:hover .beefup__plus:after {
+	background-color: #000;
+}
+
+.beefup.is-open .beefup__plus::before {
+    transform: rotate(180deg);
+}
+
+.beefup.is-open .beefup__plus::after {
+    opacity: 0;
+    transform: rotate(180deg);
+}

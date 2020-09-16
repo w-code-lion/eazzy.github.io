@@ -1,0 +1,141 @@
+// typography
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-weight: bold;
+	margin-bottom: 0;
+}
+h1, .h1 {
+	font-size: 56px;
+	line-height: 1.2;
+}
+h2, .h2 {
+	font-size: 38px;
+}
+h3, .h3 {
+	font-size: 32px;
+}
+h4, .h4 {
+	font-size: 26px;
+}
+h5, .h5 {
+	font-size: 20px;
+}
+h6, .h6 {
+	font-size: 15px;
+}
+
+
+// images
+.img-auto {
+	max-width: 100%;
+}
+
+
+// text sizes
+.t-sm {
+	font-size: 18px;
+}
+.t-md {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.4;
+}
+.t-lg {
+	font-size: 24px;
+}
+
+
+// text transform
+.t-upper {
+	text-transform: uppercase;
+}
+.t-underline {
+	text-decoration: underline;
+}
+
+
+// text weight
+.t-600 {
+	font-weight: 600;
+}
+
+
+// colors 
+.c-silver {
+	color: #454754;
+}
+.c-dark {
+	color: #121F24;
+}
+
+
+// util margins
+.mb-5 {
+	margin-bottom: 5px;
+}
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mb-15 {
+	margin-bottom: 15px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-25 {
+	margin-bottom: 25px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mb-35 {
+	margin-bottom: 35px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-45 {
+	margin-bottom: 45px;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+.mb-55 {
+	margin-bottom: 55px;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+.mb-65 {
+	margin-bottom: 65px;
+}
+.mb-70 {
+	margin-bottom: 70px;
+}
+.mb-75 {
+	margin-bottom: 75px;
+}
+.mb-80 {
+	margin-bottom: 80px;
+}
+.mb-85 {
+	margin-bottom: 85px;
+}
+.mb-90 {
+	margin-bottom: 90px;
+}
+.mb-95 {
+	margin-bottom: 95px;
+}
+
+// margin left
+.ml-20 {
+	margin-left: 20px;
+}
+
+// margin right
+.mr-20 {
+	margin-right: 20px;
+}
+.mr-30 {
+	margin-right: 30px;
+}
