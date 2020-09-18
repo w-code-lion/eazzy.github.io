@@ -21,4 +21,11 @@ $(function() {
 		arrow: false
 	});
 
+
+	var options = {
+	  valueNames: [ 'name']
+	};
+
+	var userList = new List('faqinfo', options);
+
 });
