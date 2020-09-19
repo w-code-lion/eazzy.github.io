@@ -6,11 +6,20 @@
 .header {
 	overflow: hidden;
 	background: #121F24;
+	padding-top: 86px;
 	&__top {
 		padding: 20px 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		&-wrap {
+			width: 100%;
+			background: #121f24;
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: 9;
+		}
 	}
 	&__bottom {
 		background-image: url(../img/header-bg.jpg);

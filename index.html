@@ -24,42 +24,44 @@
 
 <body>
 <header class="header">
-	<div class="container">
-		<div class="header__top">
-			<a href="index.html" class="header__top-logo"><img src='img/logo.svg' alt=""></a>
-            <div class="block__navigation">
-				<nav class="menu">
-	                <ul class="menu__list">
-	                    <li class="menu__list-item">
-	                        <a class="menu__link" href="faq.html">Вопросы-ответы</a>
-	                    </li>
-	                    <li class="menu__list-item">
-	                        <a class="menu__link" href="#">Контакты</a>
-	                    </li>
-	                </ul>
-	            </nav>
-	            <a class="download" href="#">Скачать приложение</a>
-            </div>
-
-            <a class="download-mob" href="#">Загрузить</a>
-               <!-- Кнопка для мобтльной навигации -->
-	        <div id="menu__togle" class="menu__icon">
-	            <div class="menu__icon-line"></div>
-	        </div>
-               <!-- Мобильная навигация -->
-            <div id="mobile__nav" class="mobile__nav">
-	                
-	                    <ul class="menu__list">
-	                        <li class="menu__list-item">
-	                        	<a class="menu__link" href="faq.html">Вопросы-ответы</a>
+	<div class="header__top-wrap">
+		<div class="container">
+			<div class="header__top">
+				<a href="index.html" class="header__top-logo"><img src='img/logo.svg' alt=""></a>
+	            <div class="block__navigation">
+					<nav class="menu">
+		                <ul class="menu__list">
+		                    <li class="menu__list-item">
+		                        <a class="menu__link scroll-top" href="#investoram">Инвесторам</a>
 		                    </li>
 		                    <li class="menu__list-item">
-		                        <a class="menu__link" href="#our__services">Контакты</a>
+		                        <a class="menu__link" href="faq.html">Вопросы-ответы</a>
 		                    </li>
-	                    </ul>
+		                </ul>
+		            </nav>
+		            <a class="download" href="#">Скачать приложение</a>
+	            </div>
 
-	                <a href="#popup-two" class="questions__email-mob popup-link">Написать нам</a>
-                </div>
+	            <a class="download-mob" href="#">Загрузить</a>
+	               <!-- Кнопка для мобтльной навигации -->
+		        <div id="menu__togle" class="menu__icon">
+		            <div class="menu__icon-line"></div>
+		        </div>
+	               <!-- Мобильная навигация -->
+	            <div id="mobile__nav" class="mobile__nav">
+		                
+		                    <ul class="menu__list">
+		                        <li class="menu__list-item">
+		                        	<a class="menu__link" href="faq.html">Вопросы-ответы</a>
+			                    </li>
+			                    <li class="menu__list-item">
+			                        <a class="menu__link" href="#our__services">Контакты</a>
+			                    </li>
+		                    </ul>
+
+		                <a href="#popup-two" class="questions__email-mob popup-link">Написать нам</a>
+	                </div>
+			</div>
 		</div>
 	</div>
 	<div class="header__bottom">
@@ -140,7 +142,7 @@
 			</div>
 		</div>
 	</section>
-	<div class="project">
+	<div class="project" id="investoram">
 		<div class="project__container">
 			<div class="project__img">
 				<picture>
@@ -276,21 +278,21 @@
 
             	                <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="text" name="name" placeholder="Имя" class="form__input form__input--border" required>
+                                        <input class="input-validation form__input form__input--border" type="text" name="name" placeholder="Имя" required>
                                     </div>
                                 </div>
                                  <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="email" name="mail" placeholder="Ваш Email" class="form__input form__input--border" required>
+                                        <input class="input-validation form__input form__input--border" type="email" name="mail" placeholder="Ваш Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
                                     </div>
                                 </div>
                                 <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="tel" value="+38" name="tel" placeholder="Ваш телефон" class="form__input form__input--border" required>
+                                        <input class="input-validation form__input form__input--border" type="tel" name="tel" placeholder="Ваш телефон" required>
                                     </div>
                                 </div>
                                 <div class="form__group text-center">
-                                    <input type="hidden" name="submit">
+                                    <!-- <input type="hidden" name="submit"> -->
                                     <button type="submit" class="btn btn--default btn--md">Отправить</button>
                                 </div>
             </form>
@@ -305,21 +307,21 @@
 
             	                <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="text" name="userName" placeholder="Имя" class="form__input form__input--border" required>
+                                        <input class="input-validation form__input form__input--border" type="text" name="userName" placeholder="Имя" required>
                                     </div>
                                 </div>
                                  <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="email" name="userEmail" placeholder="Ваш Email" class="form__input form__input--border" required>
+                                        <input class="input-validation form__input form__input--border" type="email" name="userEmail" placeholder="Ваш Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
                                     </div>
                                 </div>
                                 <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="tel" value="+38" name="userTel" placeholder="Ваш телефон" class="form__input form__input--border" required>
+                                        <input class="input-validation form__input form__input--border" type="tel" name="userTel" placeholder="Ваш телефон" required>
                                     </div>
                                 </div>
                                 <div class="form__group text-center">
-                                    <input type="hidden" name="submit">
+                                    <!-- <input type="hidden" name="submit"> -->
                                     <button type="submit" class="btn btn--default btn--md">Отправить</button>
                                 </div>
             </form>

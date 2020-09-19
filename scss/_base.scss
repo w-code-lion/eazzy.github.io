@@ -23,6 +23,13 @@ h6, .h6 {
 	font-size: 15px;
 }
 
+.input-validation:invalid:not(:focus):not(:placeholder-shown) {
+	border: 1px solid red;
+}
+.input-validation:valid {
+	border: 1px solid green;
+}
+
 
 // images
 .img-auto {

@@ -27,42 +27,44 @@
 <div class="page-wrap">
 	<div class="page-wrap__content">
 		<header class="header">
-			<div class="container">
-				<div class="header__top">
-					<a href="index.html" class="header__top-logo"><img src='img/logo.svg' alt=""></a>
-		            <div class="block__navigation">
-						<nav class="menu">
-			                <ul class="menu__list">
-			                    <li class="menu__list-item">
-			                        <a class="menu__link" href="faq.html">Вопросы-ответы</a>
-			                    </li>
-			                    <li class="menu__list-item">
-			                        <a class="menu__link" href="#our__services">Контакты</a>
-			                    </li>
-			                </ul>
-			            </nav>
-			            <a class="download" href="#">Скачать приложение</a>
-		            </div>
-
-		            <a class="download-mob" href="#">Загрузить</a>
-		               <!-- Кнопка для мобтльной навигации -->
-			        <div id="menu__togle" class="menu__icon">
-			            <div class="menu__icon-line"></div>
-			        </div>
-		               <!-- Мобильная навигация -->
-		            <div id="mobile__nav" class="mobile__nav">
-			                
-			                    <ul class="menu__list">
-			                        <li class="menu__list-item">
-			                        	<a class="menu__link" href="faq.html">Вопросы-ответы</a>
+			<div class="header__top-wrap">
+				<div class="container">
+					<div class="header__top">
+						<a href="index.html" class="header__top-logo"><img src='img/logo.svg' alt=""></a>
+			            <div class="block__navigation">
+							<nav class="menu">
+				                <ul class="menu__list">
+				                    <li class="menu__list-item">
+				                        <a class="menu__link scroll-top" href="#investoram">Инвесторам</a>
 				                    </li>
 				                    <li class="menu__list-item">
-				                        <a class="menu__link" href="#our__services">Контакты</a>
+				                        <a class="menu__link" href="faq.html">Вопросы-ответы</a>
 				                    </li>
-			                    </ul>
+				                </ul>
+				            </nav>
+				            <a class="download" href="#">Скачать приложение</a>
+			            </div>
 
-			                <a href="#popup-two" class="questions__email-mob popup-link">Написать нам</a>
-		                </div>
+			            <a class="download-mob" href="#">Загрузить</a>
+			               <!-- Кнопка для мобтльной навигации -->
+				        <div id="menu__togle" class="menu__icon">
+				            <div class="menu__icon-line"></div>
+				        </div>
+			               <!-- Мобильная навигация -->
+			            <div id="mobile__nav" class="mobile__nav">
+				                
+				                    <ul class="menu__list">
+				                        <li class="menu__list-item">
+				                        	<a class="menu__link" href="faq.html">Вопросы-ответы</a>
+					                    </li>
+					                    <li class="menu__list-item">
+					                        <a class="menu__link" href="#our__services">Контакты</a>
+					                    </li>
+				                    </ul>
+
+				                <a href="#popup-two" class="questions__email-mob popup-link">Написать нам</a>
+			                </div>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -148,58 +150,48 @@
     <div class="mfp-hide popup" id="popup">
         	<h2 class="popup-paragraph">Заполни анкету</h2>
         	<p class="popup-text">Заполни анкету и в ближайшее время мы свяжемся с вами что бы рассказать как стать инвестором</p>
-        	<form class="form-send modal__form form">
-
-        						<input type="hidden" name="project_name" value="Заявка с Самокаты!">
-        						<input type="hidden" name="admin_email" value="R_lagutin@ukr.net">
-        						<input type="hidden" name="form_subject" value="Заявка на услугы.">
-
+        	<form method="post" class="modal__form form" id="form3" novalidate="novalidate">
             	                <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="text" name="name" placeholder="Имя" class="form__input form__input--border" required>
+                                        <input type="text" name="userName" placeholder="Имя" class="form__input form__input--border">
                                     </div>
                                 </div>
                                  <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="email" name="mail" placeholder="Ваш Email" class="form__input form__input--border" required>
+                                        <input type="email" name="userEmail" placeholder="Ваш Email" class="form__input form__input--border">
                                     </div>
                                 </div>
                                 <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="tel" value="+38" name="tel" placeholder="Ваш телефон" class="form__input form__input--border" required>
+                                        <input type="tel" value="+38" name="userTel" placeholder="Ваш телефон" class="form__input form__input--border">
                                     </div>
                                 </div>
                                 <div class="form__group text-center">
-                                    <!-- <input type="hidden" name="submit"> -->
+                                    <input type="hidden" name="submit">
                                     <button type="submit" class="btn btn--default btn--md">Отправить</button>
                                 </div>
             </form>
     </div>
 <div class="mfp-hide popup" id="popup-two">
         	<h2 class="popup-paragraph mb-paragraph">Напиши нам</h2>
-        	<form class="form-send modal__form form">
-
-        						<input type="hidden" name="project_name" value="Заявка с Самокаты!">
-        						<input type="hidden" name="admin_email" value="R_lagutin@ukr.net">
-        						<input type="hidden" name="form_subject" value="Заявка на услугы.">
-
+        	<form method="post" class="modal__form form" id="form3" novalidate="novalidate">
             	                <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="text" name="userName" placeholder="Имя" class="form__input form__input--border" required>
+                                        <input type="text" name="userName" placeholder="Имя" class="form__input form__input--border">
                                     </div>
                                 </div>
                                  <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="email" name="userEmail" placeholder="Ваш Email" class="form__input form__input--border" required>
+                                        <input type="email" name="userEmail" placeholder="Ваш Email" class="form__input form__input--border">
                                     </div>
                                 </div>
                                 <div class="form__group">
                                     <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="tel" value="+38" name="userTel" placeholder="Ваш телефон" class="form__input form__input--border" required>
+                                        <input type="tel" value="+38" name="userTel" placeholder="Ваш телефон" class="form__input form__input--border">
                                     </div>
                                 </div>
                                 <div class="form__group text-center">
-                                    <!-- <input type="hidden" name="submit"> -->
+                                    <input type="hidden" name="submit">
                                     <button type="submit" class="btn btn--default btn--md">Отправить</button>
                                 </div>
             </form>
@@ -211,23 +203,6 @@
 
 	<script src="js/scripts.min.js"></script>
 	<script src="js/common.js"></script>
-	<script>
-    //E-mail Ajax Send
-    $(".form-send").submit(function() {
-        var th = $(this);
-        $.ajax({
-            type: "POST",
-            url: "mail.php",
-            data: th.serialize()
-        }).done(function() {
-            alert("Спасибо за заявку!");
-            setTimeout(function() {
-                th.trigger("reset");
-            }, 1000);
-        });
-        return false;
-    });
-</script>
 
 </body>
 </html>
